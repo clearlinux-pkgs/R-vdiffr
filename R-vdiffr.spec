@@ -4,7 +4,7 @@
 #
 Name     : R-vdiffr
 Version  : 1.0.4
-Release  : 4
+Release  : 5
 URL      : https://cran.r-project.org/src/contrib/vdiffr_1.0.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/vdiffr_1.0.4.tar.gz
 Summary  : Visual Regression Testing and Graphical Diffing
