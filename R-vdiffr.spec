@@ -4,7 +4,7 @@
 #
 Name     : R-vdiffr
 Version  : 1.0.5
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/vdiffr_1.0.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/vdiffr_1.0.5.tar.gz
 Summary  : Visual Regression Testing and Graphical Diffing
@@ -30,9 +30,6 @@ BuildRequires : R-testthat
 BuildRequires : R-xml2
 BuildRequires : buildreq-R
 BuildRequires : libpng-dev
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 to add graphical unit tests. It provides a Shiny application to
@@ -64,10 +61,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1674500398
+export SOURCE_DATE_EPOCH=1678826852
 
 %install
-export SOURCE_DATE_EPOCH=1674500398
+export SOURCE_DATE_EPOCH=1678826852
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-vdiffr
 cp %{_builddir}/vdiffr/LICENSE.note %{buildroot}/usr/share/package-licenses/R-vdiffr/0318f6c080dce561fe3e8896ba4b6f2cee4b0f3d || :
